@@ -6,9 +6,24 @@
     <title>JavaScript</title>
 </head>
 <body>
-    
+   
+    <div id="myDiv">
+        <button id="myBtn">Click me</button>
+    </div>
+    <script>
 
-<script src = "Sprachelemente.js">
-</script>
+function initialize() {
+            document.getElementById("myBtn").addEventListener("click", handleClick);
+            document.getElementById("myDiv").addEventListener("click", handleClick);
+            window.addEventListener("click", handleClick);
+        }
+        function handleClick(e) {
+            console.log("currentTarget: " + e.currentTarget);
+            console.log("target: " + e.target);
+            //💡Event-Bubbling abbrechen. 
+            e.stopPropagation();
+        }
+        window.addEventListener("load", initialize);
+    </script>
 </body>
 </html>
