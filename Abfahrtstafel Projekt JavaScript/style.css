@@ -1,0 +1,50 @@
+body {
+  font-family: Arial;
+}
+ 
+
+#searchbar {
+    padding: 1.5em 0;
+}
+
+button {
+    font-size: 1.5em;
+    background-color:cornflowerblue;
+    color: white;
+    padding: 10px;
+    border: 1px;
+    border-color: black;
+}
+
+h1 {
+    text-decoration-style:dashed;
+    margin-left: 30px;
+}
+
+.suchleiste {
+    font-size: 1.5em;
+}
+
+.web-title {
+ border: 0px;
+}
+
+input[type="text"] {
+    font-size: 1.2em;
+    width: 200;
+    font-family: Arial;
+    height: 2.0em;
+    margin-left: 30px;
+    padding: 3px;
+
+}
+
+#title span {
+    font-size: 0.7em;
+    padding-left: 25px;
+    margin-left: 30px;
+}
+
+#title {
+    margin-left: 30px;
+}
